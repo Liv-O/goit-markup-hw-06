@@ -27,6 +27,13 @@
 					<a class="logo" href="./index.html"
 						>Web<span class="logo-style">Studio</span></a
 					>
+
+					<button class="icon-group-btn">
+						<svg class="burger-icon" width="24" height="24">
+							<use href="./images/icons.svg#group"></use>
+						</svg>
+					</button>
+
 					<ul class="header-nav-list">
 						<li class="header-nav-list-item">
 							<a class="nav-list-item-link current" href="./index.html"
@@ -41,6 +48,7 @@
 						</li>
 					</ul>
 				</nav>
+
 				<address class="header-contacts">
 					<ul class="header-contacts-list">
 						<li class="header-contacts-list-item">
@@ -60,14 +68,13 @@
 			</div>
 		</header>
 		<main>
-			<!-- hero -->
 			<section class="hero">
 				<div class="container">
 					<h1 class="hero-header">Effective Solutions for Your Business</h1>
 					<button class="hero-btn" type="button">Order Service</button>
 				</div>
 			</section>
-			<!--features-->
+
 			<section class="features">
 				<div class="container">
 					<h2 class="features-header section-header visually-hidden">
@@ -125,6 +132,7 @@
 					</ul>
 				</div>
 			</section>
+
 			<section class="our-team">
 				<div class="container">
 					<h2 class="our-team-header section-header">Our Team</h2>
@@ -132,6 +140,7 @@
 						<li class="our-team-list-item">
 							<img
 								src="./images/mark.jpg"
+								srcset="./images/mark.jpg 1x, ./images/person1-2x.jpg 2x"
 								alt="Mark"
 								width="264"
 								height="260"
@@ -172,7 +181,13 @@
 							</div>
 						</li>
 						<li class="our-team-list-item">
-							<img src="./images/tom.jpg" alt="Tom" width="264" height="260" />
+							<img
+								src="./images/tom.jpg"
+								srcset="./images/tom.jpg 1x, ./images/person2-2x.jpg 2x"
+								alt="Tom"
+								width="264"
+								height="260"
+							/>
 							<div class="our-team-content-container">
 								<h3 class="our-team-list-item-content-header">Tom Ford</h3>
 								<p class="our-team-list-item-content-text">
@@ -213,6 +228,7 @@
 						<li class="our-team-list-item">
 							<img
 								src="./images/camila.jpg"
+								srcset="./images/camila.jpg 1x, ./images/person3-2x.jpg 2x"
 								alt="Camila"
 								width="264"
 								height="260"
@@ -255,6 +271,7 @@
 						<li class="our-team-list-item">
 							<img
 								src="./images/daniel.jpg"
+								srcset="./images/daniel.jpg 1x, ./images/person4-2x.jpg 2x"
 								alt="Daniel"
 								width="264"
 								height="260"
@@ -297,6 +314,7 @@
 					</ul>
 				</div>
 			</section>
+
 			<section class="portfolio">
 				<div class="container">
 					<h2 class="portfolio-header section-header">Our Portfolio</h2>
@@ -305,6 +323,7 @@
 							<div class="overlay-container">
 								<img
 									src="./images/banking.jpg"
+									srcset="./images/banking.jpg 1x, ./images/banking2x.jpg 2x"
 									alt="banking"
 									width="360"
 									height="300"
@@ -324,6 +343,7 @@
 							<div class="overlay-container">
 								<img
 									src="./images/cashless.jpg"
+									srcset="./images/cashless.jpg 1x, ./images/cashless2x.jpg 2x"
 									alt="banking"
 									width="360"
 									height="300"
@@ -343,6 +363,10 @@
 							<div class="overlay-container">
 								<img
 									src="./images/meditation.jpg"
+									srcset="
+										./images/meditation.jpg   1x,
+										./images/meditation2x.jpg 2x
+									"
 									alt="banking"
 									width="360"
 									height="300"
@@ -362,6 +386,7 @@
 							<div class="overlay-container">
 								<img
 									src="./images/taxi.jpg"
+									srcset="./images/taxi.jpg 1x, ./images/taxi2x.jpg 2x"
 									alt="banking"
 									width="360"
 									height="300"
@@ -381,6 +406,7 @@
 							<div class="overlay-container">
 								<img
 									src="./images/screen.jpg"
+									srcset="./images/screen.jpg 1x, ./images/screen2x.jpg 2x"
 									alt="banking"
 									width="360"
 									height="300"
@@ -400,6 +426,7 @@
 							<div class="overlay-container">
 								<img
 									src="./images/courses.jpg"
+									srcset="./images/courses.jpg 1x, ./images/courses2x.jpg 2x"
 									alt="banking"
 									width="360"
 									height="300"
@@ -487,7 +514,7 @@
 				</div>
 			</div>
 		</footer>
-		<div class="backdrop is-open">
+		<div class="backdrop">
 			<div class="modal">
 				<button class="close-btn" type="button">
 					<svg class="icon-close" width="8" height="8">
@@ -573,6 +600,67 @@
 					<button class="modal-form-btn" type="submit">Send</button>
 				</form>
 			</div>
+		</div>
+		<!-- mobile menu -->
+		<div class="mobile-menu">
+			<button class="close-btn" type="button">
+				<svg class="icon-close" width="8" height="8">
+					<use href="./images/icons.svg#close"></use>
+				</svg>
+			</button>
+			<ul class="menu-list">
+				<li class="menu-list-item">
+					<a class="menu-list-item-link current" href="./index.html">Studio</a>
+				</li>
+				<li class="menu-list-item">
+					<a class="menu-list-item-link" href="">Portfolio</a>
+				</li>
+				<li class="menu-list-item">
+					<a class="menu-list-item-link" href="">Contacts</a>
+				</li>
+			</ul>
+			<ul class="menu-contacts-list">
+				<li class="menu-contacts-list-item">
+					<a class="menu-contacts-list-link" href="tel:+110001111111"
+						>+11 (000) 111-11-11</a
+					>
+				</li>
+				<li class="menu-contacts-list-item">
+					<a class="menu-contacts-list-link" href="mailto:info@devstudio.com"
+						>info@devstudio.com</a
+					>
+				</li>
+			</ul>
+			<ul class="menu-list-icons">
+				<li class="menu-icon-item">
+					<a href="#" class="menu-icon-link">
+						<svg width="24" height="24" class="menu-icon">
+							<use href="./images/icons.svg#instagram"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="menu-icon-item">
+					<a href="#" class="menu-icon-link">
+						<svg width="24" height="24" class="menu-icon">
+							<use href="./images/icons.svg#twitter"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="menu-icon-item">
+					<a href="#" class="menu-icon-link">
+						<svg width="24" height="24" class="menu-icon">
+							<use href="./images/icons.svg#facebook"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="menu-icon-item">
+					<a href="#" class="menu-icon-link">
+						<svg width="24" height="24" class="menu-icon">
+							<use href="./images/icons.svg#linkedin"></use>
+						</svg>
+					</a>
+				</li>
+			</ul>
 		</div>
 	</body>
 </html>
